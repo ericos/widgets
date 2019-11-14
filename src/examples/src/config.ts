@@ -70,6 +70,8 @@ import ClickableClosableChip from './widgets/chip/ClickableClosable';
 import ClosableRendererChip from './widgets/chip/ClosableRenderer';
 import AdvancedOptions from './widgets/select/AdvancedOptions';
 import NonNative from './widgets/select/NonNative';
+import BasicSwitch from './widgets/switch/Basic';
+import DisabledSwitch from './widgets/switch/Disabled';
 
 export interface ExampleConfig {
 	title?: string;
@@ -445,6 +447,22 @@ export const config: Config = {
 				filename: 'Basic'
 			}
 		}
+	},
+	switch: {
+		filename: 'index',
+		overview: {
+			example: {
+				module: BasicSwitch,
+				filename: 'Basic'
+			}
+		},
+		examples: [
+			{
+				title: 'Disabled',
+				module: DisabledSwitch,
+				filename: 'Disabled'
+			}
+		]
 	},
 	'text-area': {
 		overview: {
