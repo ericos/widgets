@@ -75,6 +75,7 @@ import AdvancedOptions from './widgets/select/AdvancedOptions';
 import NonNative from './widgets/select/NonNative';
 import BasicSwitch from './widgets/switch/Basic';
 import DisabledSwitch from './widgets/switch/Disabled';
+import Exclusive from './widgets/accordion-pane/Exclusive';
 
 export interface ExampleConfig {
 	title?: string;
@@ -216,7 +217,13 @@ export const config: Config = {
 				module: BasicAccordionPane,
 				filename: 'Basic'
 			}
-		}
+		},
+		examples: [
+			{
+				module: Exclusive,
+				filename: 'Exclusive'
+			}
+		]
 	},
 	card: {
 		filename: 'index',
