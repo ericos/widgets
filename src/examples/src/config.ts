@@ -81,6 +81,7 @@ import ToggleButton from './widgets/button/ToggleButton';
 import LimitedRange from './widgets/calendar/LimitedRange';
 import BasicConstrainedInput from './widgets/constrained-input/Basic';
 import Username from './widgets/constrained-input/Username';
+import BasicEmailInput from './widgets/email-input/Basic';
 
 export interface ExampleConfig {
 	title?: string;
@@ -142,6 +143,15 @@ export const config: Config = {
 				filename: 'LeadingTrailing'
 			}
 		]
+	},
+	'email-input': {
+		filename: 'index',
+		overview: {
+			example: {
+				module: BasicEmailInput,
+				filename: 'Basic'
+			}
+		}
 	},
 	button: {
 		filename: 'index',
