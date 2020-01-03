@@ -712,6 +712,7 @@ export const config = {
 					filename: 'Disabled'
 				}
 			]
+
 		},
 		'tab-controller': {
 			examples: [
